@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/reset.css" />
+    <link rel="stylesheet" href="./src/index.css" />
+    <title>Web Form</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset class="l-sign-up__container">
+        <p class="c-sign-up__legend">Create an Account</p>
+        <div class="l-name__container">
+          <div>
+            <label class="c-label" for="firstNameInput">First Name</label>
+            <br />
+            <input type="text" name="firstName" id="firstNameInput" required />
+          </div>
+          <div>
+            <label class="c-label" for="lastNameInput">Last Name</label>
+            <br />
+            <input type="text" name="lastName" id="lastNameInput" required />
+          </div>
+        </div>
+        <div>
+          <label class="c-label" for="emailInput">E-mail</label>
+          <input
+            class="c-input__email-big"
+            type="email"
+            name="email"
+            id="emailInput"
+            required
+          />
+          <span class="c-info-advises">
+            We'll never share your email with anyone else.
+          </span>
+        </div>
+        <div class="l-radio__container">
+          <label class="radio__item_container c-label"
+            >Male
+            <input type="radio" name="genderInput" required />
+            <span class="radio__item_checkmark"></span>
+          </label>
+          <label class="radio__item_container c-label"
+            >Female
+            <input type="radio" name="genderInput" />
+            <span class="radio__item_checkmark"></span>
+          </label>
+          <label class="radio__item_container c-label"
+            >Other
+            <input type="radio" name="genderInput" />
+            <span class="radio__item_checkmark"></span>
+          </label>
+        </div>
+        <div class="l-geo__container">
+          <div>
+            <label class="c-label" for="countryInput">Country</label>
+            <div class="c-select">
+              <select name="country" id="countryInput" required>
+                <option value="uk">UK</option>
+                <option value="us">USA</option>
+                <option value="fr">France</option>
+                <option value="de">Germany</option>
+                <option value="es">Spain</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label class="c-label" for="cityInput">City</label>
+            <br />
+            <input type="text" name="city" id="cityInput" required />
+          </div>
+        </div>
+        <div class="submit__container">
+          <div class="submit__wrap">
+            <label class="submit__button" for="submitInput">Sign Up</label>
+            <input id="submitInput" type="submit" />
+          </div>
+        </div>
+        <span class="l-info-advises c-info-advises">
+          By clicking the 'Sign Up' button, you confirm that you accept our
+          <span class="agreements-link">Term of Use</span> and
+          <span class="agreements-link">Privacy Policy</span>.
+        </span>
+        <hr class="divider" />
+        <div class="l-log-in">
+          <span class="c-log-in__question">Have an account?</span>
+          <span class="c-log-in__link-to-log-in">Log In</span>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
